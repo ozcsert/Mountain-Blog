@@ -28,7 +28,7 @@ html {
 }
 
 /* width and height is static at this stage, be sure to change it when applying responsive layout*/
-.container01 {
+.container {
     display: flex;
     flex-direction: row;
     width: 1462px;
@@ -38,7 +38,7 @@ html {
 }
 
 .index-number {
-    left: 0px; 
+    left: 0; 
     top: 17rem;
     position: absolute; 
     opacity: 0.10; 
@@ -55,6 +55,7 @@ html {
     flex-shrink: 0;
 }
 
+
 .container-text {
     position: relative;
     display: inline-flex;
@@ -67,10 +68,10 @@ html {
     padding-bottom: 10%;
 }
 
-.get-started {
+.tagline {
     position: relative;
 }
-.get-started > .text {
+.tagline > .text {
     left: 48rem; 
     top: 0px; 
     position: absolute; 
@@ -83,7 +84,7 @@ html {
     word-wrap: break-word"
 }
 
-.get-started > .line {
+.tagline > .line {
     width: 11.2%; 
     height: 1rem; 
     left: 0px; 
