@@ -4,11 +4,15 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 2px;
+}
+
 .containers {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    gap: 200px;
+    gap: 100rem;
 }
 
 /* to change the order of the children edit the inline "order" style property of the "container-image" element in the html */
@@ -18,6 +22,8 @@
     flex-direction: row;
     width: 1462px;
     height: 720px;
+        /* width: 700px;
+    height: 350px; */
     background-color: grey;
 }
 
@@ -34,7 +40,6 @@
     word-wrap: break-word;
 }
 
- */
 .container-image {
     width: 38%;
     height: auto;
@@ -45,24 +50,56 @@
     position: relative;
     display: inline-flex;
     flex-direction: column;
-    gap: 27px;
+    gap: 14.5rem;
     width: 62%;
-    padding: 10% ;
-}
-
-.asd {
-    left: 150px; top: 141px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 27px; display: inline-flex;
+    padding: 10% 10% 10% 10%;
 }
 
 .get-started {
-    left: 96px; 
+    position: relative;
+}
+.get-started > .text {
+    left: 48rem; 
     top: 0px; 
     position: absolute; 
     color: #FBD784; 
-    font-size: 18px; 
+    font-size: 9rem; 
     font-family: Gilroy; 
     font-weight: 800; 
     text-transform: uppercase; 
     letter-spacing: 6px; 
     word-wrap: break-word"
+}
+
+.get-started > .line {
+    width: 13%; 
+    height: 1rem; 
+    left: 0px; 
+    top: 5rem; 
+    position: absolute; 
+    background: #FBD784;
+}
+
+.container-text > .title {
+    width: 87%; 
+    color: white; 
+    font-size: 32rem; 
+    font-family: Chronicle Display; 
+    font-weight: 600; 
+    height: auto;
+}
+
+.container-text > .description {
+    width: auto; 
+    color: rgb(19, 12, 12); 
+    font-size: 9rem; 
+    font-family: Gilroy; 
+    font-weight: 700; 
+    line-height: 16rem; 
+    word-wrap: break-word"
+}
+
+.read-more {
+    height: 22px; 
+    position: relative
 }
