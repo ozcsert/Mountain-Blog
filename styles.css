@@ -4,10 +4,65 @@
     box-sizing: border-box;
 }
 
+.containers {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 200px;
+}
 
+/* to change the order of the children edit the inline "order" style property of the "container-image" element in the html */
 
-.container {
+.container01 {
+    display: flex;
+    flex-direction: row;
     width: 1462px;
     height: 720px;
     background-color: grey;
+}
+
+.index-number {
+    left: 0px; 
+    top: 38px; 
+    position: absolute; 
+    opacity: 0.10; 
+    color: rgb(20, 10, 10); 
+    font-size: 240px; 
+    font-family: Gilroy; 
+    font-weight: 700; 
+    line-height: 240px; 
+    word-wrap: break-word;
+}
+
+ */
+.container-image {
+    width: 38%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.container-text {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 27px;
+    width: 62%;
+    padding: 10% ;
+}
+
+.asd {
+    left: 150px; top: 141px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 27px; display: inline-flex;
+}
+
+.get-started {
+    left: 96px; 
+    top: 0px; 
+    position: absolute; 
+    color: #FBD784; 
+    font-size: 18px; 
+    font-family: Gilroy; 
+    font-weight: 800; 
+    text-transform: uppercase; 
+    letter-spacing: 6px; 
+    word-wrap: break-word"
 }
