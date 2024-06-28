@@ -14,52 +14,51 @@
     box-sizing: border-box;
 }
 
-/* change this font-size value to change all of the font sizes. They are bound with rem */
 html {
-    font-size: 2px;
+    font-size: 10px;
 }
 
 /* to change the order of the children(moving image to right or left) edit the inline "order" style property of the "container-image" element in the html */
 .containers {
     display: inline-flex;
     flex-direction: column;
+    gap: 20rem;
+    height: auto;
+    width: auto;
+    background-color: green;
     align-items: center;
-    gap: 100rem;
 }
 
-/* width and height is static at this stage, be sure to change it when applying responsive layout*/
 .container01 {
+    position:relative;
     display: flex;
     flex-direction: row;
     width: 1462px;
     height: 720px;
     background: var(--BG, #0B1D26);
-    /* background-color: transparent; */
 }
 
 .index-number {
     left: 0px; 
-    top: 17rem;
+    top: 3.6rem;
     position: absolute; 
     opacity: 0.10; 
     color: rgb(255, 255, 255); 
-    font-size: 120rem; 
+    font-size: 24rem; 
     font-family: Gilroy; 
     font-weight: 700; 
-    line-height: 120rem; 
+    line-height: 24rem; 
 }
 
 .container-image {
     width: 38%;
     height: auto;
-    flex-shrink: 0;
 }
 
 .container-text {
-    position: relative;
     display: inline-flex;
     flex-direction: column;
-    gap: 14.5rem;
+    gap: 2.8rem;
     width: 62%;
     padding-left: 10.4%;
     padding-top: 11%; 
@@ -67,27 +66,27 @@ html {
     padding-bottom: 10%;
 }
 
-.get-started {
+.tagline {
     position: relative;
 }
-.get-started > .text {
-    left: 48rem; 
+.tagline > .text {
+    left: 9.6rem; 
     top: 0px; 
     position: absolute; 
     color: #FBD784; 
-    font-size: 9rem; 
+    font-size: 1.8rem; 
     font-family: Gilroy; 
     font-weight: 700; 
     text-transform: uppercase; 
-    letter-spacing: 3rem; 
+    letter-spacing: 0.6rem; 
     word-wrap: break-word"
 }
 
-.get-started > .line {
+.tagline > .line {
     width: 11.2%; 
-    height: 1rem; 
+    height: 0.2rem; 
     left: 0px; 
-    top: 5rem; 
+    top: 1rem; 
     position: absolute; 
     background: #FBD784;
 }
@@ -95,7 +94,7 @@ html {
 .container-text > .title {
     width: 87%; 
     color: white; 
-    font-size: 32rem; 
+    font-size: 6.4rem; 
     font-family: Chronicle Display; 
     font-weight:500; 
     height: auto;
@@ -104,10 +103,10 @@ html {
 .container-text > .description {
     width: auto; 
     color: rgb(255, 255, 255); 
-    font-size: 9rem; 
+    font-size: 1.8rem; 
     font-family: Gilroy; 
     font-weight: 700; 
-    line-height: 16rem; 
+    line-height: 3.2rem; 
     word-wrap: break-word"
 }
 
@@ -122,7 +121,7 @@ html {
 
 .read-more > .text {
     color: var(--Accent, #FBD784);
-    font-size: 9rem; 
+    font-size: 1.8rem; 
     font-family: Gilroy; 
     font-weight: 700; 
     width: 70%;
@@ -132,7 +131,31 @@ html {
 .read-more > .icon-arrow {
     width: 14%; 
     height: 50%; 
-    margin-left: 2rem;
-    margin-top:3px
+    margin-left: 0.4rem;
+    margin-top:0.6rem;
 }
+
+
+ @media  (max-width: 1200px) {
+    .container01 {
+      width: 1200px;
+      height: 590px; 
+     ;
+    }
+    html {
+      font-size: 8.2px;
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .container01 {
+        width: 768px;
+        height: 377px; 
+       ;
+      }
+      html {
+        font-size: 5.12px;
+      }
+  }
 
