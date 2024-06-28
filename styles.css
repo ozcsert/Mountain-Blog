@@ -136,7 +136,7 @@ html {
 }
 
 
- @media  (max-width: 1200px) {
+ @media screen and (max-width: 1200px) {
     .container01 {
       width: 1200px;
       height: 590px; 
@@ -147,15 +147,75 @@ html {
     }
   }
 
-
-  @media screen and (max-width: 768px) {
+  @media (max-width: 992px) {
     .container01 {
-        width: 768px;
-        height: 377px; 
-       ;
+      width: 992px;
+      height: 400px; 
+     ;
+    }
+    html {
+      font-size: 6px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container01 {
+      width: 768px;
+      height: 308px; 
+     ;
+    }
+    html {
+      font-size: 4.62px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .container01 {
+        width: 480px;
+        height: 190px; 
+       
+      }
+      .container-text {
+        padding-top: 8%; 
+        padding-bottom: 13%;
       }
       html {
-        font-size: 5.12px;
+        font-size: 3px;
+      }
+  }
+
+  @media screen and (max-width: 393px) {
+    .container01 {
+        width: 393px;
+        height: 182px; 
+      }
+      .container-text {
+        padding-top: 8%; 
+        padding-bottom: 13%;
+      }
+      html {
+        font-size: 3px;
+      }
+      .read-more {
+        width: 30%;
+      }
+  }
+
+  @media screen and (max-width: 365px) {
+    .container01 {
+        width: 365px;
+        height: 180px; 
+       
+      }
+      .container-text {
+        padding-top: 8%; 
+        padding-bottom: 13%;
+      }
+      html {
+        font-size: 3px;
+      }
+      .read-more {
+        width: 30%;
       }
   }
 
