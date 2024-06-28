@@ -157,6 +157,17 @@ html {
       font-size: 6px;
     }
   }
+  
+  @media  (max-width: 950px) {
+    .container01 {
+      width: 950px;
+      height: 380px; 
+     ;
+    }
+    html {
+      font-size: 5.5px;
+    }
+  }
 
   @media (max-width: 768px) {
     .container01 {
@@ -167,6 +178,21 @@ html {
     html {
       font-size: 4.62px;
     }
+  }
+
+  @media screen and (max-width: 545px) {
+    .container01 {
+        width: 545px;
+        height: 200px; 
+
+      }
+      .container-text {
+        padding-top: 8%; 
+        padding-bottom: 13%;
+      }
+      html {
+        font-size: 3.3px;
+      }
   }
 
   @media screen and (max-width: 480px) {
