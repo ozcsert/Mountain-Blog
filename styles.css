@@ -17,14 +17,14 @@
 }
 
 html {
-    font-size: 2px;
+    font-size: 10px;
 }
 
 .containers {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    gap: 100rem;
+    gap: 20rem;
     width: 1462px;
     height: auto 3040px;
     background: var(--BG, #0B1D26);
@@ -40,38 +40,39 @@ html {
 }
 
 .footer > .left-side {
+    
     order : 0;
     display: flex;
     flex-direction: column;
     width: 25%; 
     color: rgb(255, 255, 255); 
-    font-size: 9rem; 
+    font-size: 1.8rem; 
     font-family: Gilroy; 
     font-weight: 700; 
-    line-height: 16rem; 
+    line-height: 3.2rem; 
 }
 
 .footer > .left-side > .logo {
     color: var(--Wei, #FFF);
     font-family: "Chronicle Display";
-    font-size: 16rem;
+    font-size: 3.2rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 0.16rem;
+    letter-spacing: 0.032rem;
     text-transform:uppercase;
-    margin-top: -3.5rem;
+    margin-top: -0.7rem;
 }
 
 .footer > .left-side > .catchprase {
     color: #FFF;
     font-family: Gilroy;
-    font-size: 9rem;
+    font-size: 1.8rem;
     font-style: normal;
-    line-height: 16rem; /* 177.778% */
-    margin-top:12rem;
+    line-height: 3.2rem; /* 177.778% */
+    margin-top:2.4rem;
     word-wrap: break-word;
-    width: 151.5rem;
+    width: 30.3rem;
 }
 
 .footer > .left-side > .copyright {
@@ -79,14 +80,15 @@ html {
     margin-top: auto;
     color: #FFF;
     font-family: Gilroy;
-    font-size: 9rem;
+    font-size: 1.8rem;
     font-style: normal;
-    line-height: 16rem;
+    line-height: 3.2rem;
     opacity: 0.5;
     
 }
 
 .footer > .right-side-links {
+    
     order: 1;
     display:flex;
     flex-direction: row;
@@ -94,21 +96,21 @@ html {
     margin-right: 0px;
     margin-left: auto;
     margin-top: 0px;
-    gap:107rem;
+    gap:2.14rem;
     
 }
 
 .footer > .right-side-links >  div > h3 {
     color: var(--Accent, #FBD784);
     font-family: Gilroy;
-    font-size: 12rem;
+    font-size: 2.4rem;
     font-style: normal;
     font-weight: 500;
-    margin-bottom: 16rem;
+    margin-bottom: 3.2rem;
 }
 
 .footer > .right-side-links > div > ul {
-    margin-top: -3.5rem;
+    margin-top: -0.7rem;
 
 }
 
@@ -116,8 +118,102 @@ html {
     text-transform: capitalize;
     color: #FFF;
     font-family: Gilroy;
-    font-size: 9rem;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 23rem;
+    line-height: 4.6rem;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .containers {
+    width: 1200px;
+    }
+    html {
+    font-size: 8.2px;
+    }
+}
+
+@media  (max-width: 992px) {
+    .containers {
+    width: 992px;
+    ;
+    }
+    html {
+    font-size: 6px;
+    }
+}
+
+@media  (max-width: 950px) {
+    .containers {
+    width: 950px;
+    ;
+    }
+    html {
+    font-size: 5.5px;
+    }
+}
+
+@media (max-width: 820px) {
+    .containers {
+    width: 820px;
+    ;
+    }
+    html {
+    font-size: 4.62px;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .containers {
+        width: 545px;
+        
+    }
+    html {
+        font-size: 3.3px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .containers {
+        width: 480px;
+    
+    }
+    html {
+        font-size: 3px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .containers {
+        width: 430px;
+    }
+    html {
+        font-size: 3px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 393px) {
+    .containers {
+        width: 393px;
+    }
+    html {
+        font-size: 3px;
+    }
+}
+
+
+@media screen and (max-width: 340px) {
+    .containers {
+        width: 340px;
+
+    }
+
+    html {
+        font-size: 3px;
+    }
+
 }
