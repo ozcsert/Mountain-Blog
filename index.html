@@ -4,41 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css"> <link/>
+    <link rel="stylesheet" href="styles/globals.css"> <link/>
+    <link rel="stylesheet" href="styles/containers.css"> <link/>
 </head>
 <body>
-    <!-- any other content containers with similar layouts will come under this parent -->
-    <div class="containers">
-        <!-- Container number 02 -->
-        <div class="container">
-            <!--change the style order to 0 || 1 to reposition image to left or right-->
-            <img class="container-image" style="order:1"  src="/img/content-image-03.png" />  
-            <div class= "container-text" >
-                <div class="index-number">03 </div>
-                <div class="tagline" style="margin-bottom: 0.2rem; margin-top: -0.2rem">
-                    <div class="text">where you go is the key</div>
-                    <div class="line"></div>
-                </div>
-                <div class="title" >Understand Your Map & Timing</div>
-                <div class="description">
-                    To start, print out the hiking guide and map. If it’s raining, 
-                    throw them in a Zip-Lock bag. Read over the guide, study the map,
-                     and have a good idea of what to expect. I like to know what
-                      my next landmark is as I hike. For example, I’ll read the guide 
-                      and know that say, in a mile, I make a right turn at the 
-                      junction.. </div>
-                <div class="read-more">
-                    <div class="text">read more</div>
-                    <div class="icon-arrow">
-                        <svg  xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" viewBox="0 0 24 16" fill="none">
-                            <path d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z" fill="#FBD784"/>
-                          </svg>
-                    </div>
-                    
-                </div>
+        <!-- Container number 01 -->
+        <section class="where-you-go-container">
+            <!--use --order-right or --order-left reposition image to left or right-->
+            <div class="where-you-go-wrapper --order-right " >
+                <img class="where-you-go-img"  src="/img/content-image-03.png" />  
             </div>
-        </div>
-        <!-- Container number 02 -->
+            <div class= "where-you-go-content" >
+                <h2 class="content__index">01 </h>
+                <h4 class="content__tagline">
+                    <hr class="tagline__hr"></hr>
+                    <span class="tagline">where you go is the key</span>
+                </h4>
+                <h1 class="content__title">Understand Your Map & Timing</h1>
+                <p class="content__description">
+                    To start, print out the hiking guide and map. If it’s raining, 
+                    throw them in a Zip-Lock bag. Read over the guide, study the map, 
+                    and have a good idea of what to expect. I like to know what my next 
+                    landmark is as I hike. For example, I’ll read the guide and know that 
+                    say, in a mile, I make a right turn at the junction.. </p>
+                <a class="content__cta">
+                    <span class="cta__label">read more</span>
+                        <img class="cta__icon-arrow" src="/img/arrow_downward_24px.svg" alt="arrow-icon" />  
+                </a>
+            </div>
+        </section>
+        <!-- Container number 01 -->
     </div>
 </body>
 </html>
