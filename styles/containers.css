@@ -137,7 +137,7 @@
 
 @media screen and (max-width: 480px) {
   .where-you-go-content {
-    padding: 8rem; /* 48px */
+    padding: 2rem; /* 48px */
     gap: 1rem; /* 16px */
   }
   .content__index {
