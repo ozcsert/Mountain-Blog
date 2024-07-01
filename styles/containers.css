@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10rem; /* 160px */
+    padding: 8rem; /* 160px */
     gap: 2rem; /* 32px */
 }
 
@@ -102,6 +102,8 @@
     font-weight: var(--fnt-weight-700);
 }
 
+
+
 @media screen and (max-width: 1280px) {
     .getting-started-content {
       padding: 6rem; /* 96px */
@@ -128,6 +130,11 @@
     
     .getting-started-container {
       flex-direction: column;
+    }
+
+    .cta__icon-arrow {
+      width: 16px;
+      height: 12px;
     }
   }
 
