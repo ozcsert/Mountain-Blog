@@ -1,0 +1,196 @@
+.hiking-essentials-container {
+  display: flex;
+  max-width: 1462px;
+  margin-inline: auto;
+  background-color: var(--clr-primary);
+}
+
+.hiking-essenatials-img-wrapper {
+  flex-basis: 33%; 
+  display: grid;
+  place-items: center;
+}
+
+.--order-left {
+  order: 0;
+}
+
+.--order-right {
+  order: 1;
+}
+
+
+.hiking-essentials-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 720px;
+}
+
+
+.hiking-essentials-content {
+  flex-basis: 66%;  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem; /* 32px */
+  padding: 2rem 2rem 0rem 12rem;
+}
+
+/* when used positions the content to the right side of the container */
+/* .--stick--right {
+  padding: 2rem 2rem 0rem 12rem;
+} */
+
+
+.content__index {
+  left:0px;
+  top: 2rem; /* 32px */
+  position: absolute;
+  opacity: 0.10;
+  color: var(--clr-white);
+  font-size: var(--fnt-size-xxlg); /* 256px */
+  font-family: var(--fnt-family-primary);
+  font-weight: var(--fnt-weight-700);
+  line-height: 15rem; /* 240px */
+}
+
+/* 
+positions the content__index element in accordance to the figma design, that is, slightly right */
+.index--move-right {
+  left: 4rem;
+}
+
+.content__tagline-wrapper {
+  display: flex;
+}
+
+/* should be used in the first container for the gap between tagline and the hr */
+.--tagline-wrapper--gap {
+  gap:2rem; /* 32px */   
+}
+
+.tagline {
+  color: var(--clr-secondary);
+  font-size: var(--fnt-size-s); /* 16px */
+  font-family: var(--fnt-family-primary);
+  font-weight: var(--fnt-weight-700);
+  text-transform: uppercase;
+  letter-spacing: 6px; 
+  word-wrap: nowrap;
+}
+
+.tagline__hr {
+  width: 6rem;
+  margin: auto 0;
+  height: 0px;
+  border-color: var(--clr-secondary);
+}
+
+.content__title {
+  color: var(--clr-secondary);
+  font-size: var(--fnt-size-lg); /* 64px */
+  font-family: var(--fnt-family-secondary);
+  font-weight: var(--fnt-weight-500);
+}
+
+.content__description {
+  color: var(--clr-white);
+  font-size: var(--fnt-size-s); /* 16px */
+  font-family: var(--fnt-family-primary);
+  font-weight: var(--fnt-weight-700);
+  line-height: 2rem; /* 32px */
+  word-wrap: break-word;
+}
+
+.content__cta {
+  display: flex;
+  width: auto;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* 32px */
+}
+
+.cta__label {
+  color: var(--clr-secondary);
+  font-size: var(--fnt-size-s); /* 16px */
+  font-family: var(--fnt-family-primary);
+  font-weight: var(--fnt-weight-700);
+}
+
+.cta__icon--arrow {
+  width: 16px;
+  height: 12px;
+}
+
+@media screen and (max-width: 1280px) {
+  .hiking-essentials-content {
+    padding: 6rem; /* 96px */
+    gap: 2rem; /* 32px */
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hiking-essentials-content {
+    padding: 8rem;
+    gap: 2rem; 
+  }
+
+  .hiking-essentials-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .hiking-essentials-content {
+    padding: 5rem; /* 80px */
+    gap: 1rem; /* 16px */
+  }
+
+  .hiking-essentials-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hiking-essentials-content {
+    padding: 3rem; /* 48px */
+    gap: 1rem; /* 16px */
+  }
+  .content__index {
+    font-size: var(--fnt-size-xlg); /* 128px */
+    top:0px
+  }
+  .hiking-essentials-container {
+    flex-direction: column;
+  }
+  .tagline {
+    font-size: var(--fnt-size-xs); /* 8px */
+  }
+  .tagline__hr {
+    width: 3rem;
+  }
+  .content__title {
+    font-size: var(--fnt-size-m); /* 32px */
+  }
+
+  .content__description {
+    font-size: var(--fnt-size-xs); /* 8px */
+    line-height: 1rem; /* 16px */
+  }
+
+  .cta__label {
+    font-size: var(--fnt-size-xs); /* 8px */
+  }
+
+  .content__cta {
+    gap: 1rem; /* 16px */
+  }
+
+  .cta__icon-arrow {  
+    width: 16px;
+    height: 12px;
+  }
+}
