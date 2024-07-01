@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Chronicle Display";
+  src: url(fonts/Chronicle\ Display\ Roman.otf);
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(fonts/Gilroy-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fnt-size-xs: 0.5rem; /* 8px */
+  --fnt-size-s: 1rem; /* 16px */
+  --fnt-size-m: 2rem; /* 32px */
+  --fnt-size-lg: 4rem; /* 64px */
+  --fnt-size-xlg: 8rem; /* 128px */
+  --fnt-size-xxlg: 16rem; /* 256px */
+  --fnt-family-primary: "Gilroy";
+  --fnt-family-secondary: 'Chronicle Display';
+  --fnt-weight-700: 700;
+  --fnt-weight-500: 500;
+  --clr-white: #FFFF;
+  --clr-secondary: #FBD784;
+  --clr-primary: #0B1D26;
+}

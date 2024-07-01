@@ -4,42 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css"> <link/>
+    <link rel="stylesheet" href="globals.css"> <link/>
+    <link rel="stylesheet" href="containers.css"> <link/>
 </head>
 <body>
-    <!-- any other content containers with similar layouts will come under this parent -->
-    <div class="containers">
         <!-- Container number 01 -->
-        <div class="container01">
-            <!--change the style order to 0 || 1 to reposition image to left or right-->
-            <img class="container-image" style="order:1"  src="/img/content-image-1.png" />  
-            <div class= "container-text" >
-                <div class="index-number">01 </div>
-                <div class="tagline">
-                    <div class="text">Get Started</div>
-                    <div class="line"></div>
-                </div>
-                <div class="title" >What level of  hiker are you?</div>
-                <div class="description">
+        <section class="getting-started-container">
+            <!--use --order-right or --order-left reposition image to left or right-->
+            <div class="getting-started-img-wrapper --order-right " >
+                <img class="getting-started-img"  src="/img/content-image-1.png" />  
+            </div>
+            <div class= "getting-started-content" >
+                <h2 class="content__index">01 </h>
+                <h4 class="content__tagline">
+                    <hr class="tagline__hr"></hr>
+                    <span class="tagline">Get Started</span>
+                </h4>
+                <h1 class="content__title">What level of  hiker are you?</h1>
+                <p class="content__description">
                     Determining what level of hiker you are can be an important tool when planning future hikes. 
                     This hiking level guide will help you plan hikes according to different hike ratings set by 
                     various websites like All Trails and Modern Hiker. What type of hiker are you 
-                    – novice, moderate, advanced moderate, expert, or expert backpacker? </div>
-                <div class="read-more">
-                    <div class="text">read more</div>
-                    <div class="icon-arrow">
-                        <svg  xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" viewBox="0 0 24 16" fill="none">
-                            <path d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z" fill="#FBD784"/>
-                        </svg>
-                    </div>
+                    – novice, moderate, advanced moderate, expert, or expert backpacker? </p>
+                <a class="content__cta">
+                    <span class="cta__label">read more</span>
+                        <img class="cta__icon-arrow" src="/img/arrow_downward.svg" alt="arrow-icon" />  
+                    </a>
                 </div>
-            </div>
-        </div>
+            </section>
         <!-- Container number 01 -->
-        <!-- Container number 02 -->
-        <!-- Container number 02 -->
-        <!-- Container number 03 -->
-        <!-- Container number 03 -->
     </div>
 </body>
 </html>
