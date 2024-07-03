@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Chronicle Display";
-  src: url(fonts/Chronicle\ Display\ Roman.otf);
+  src: url(/fonts/Chronicle\ Display\ Roman.otf);
 }
 
 @font-face {
   font-family: "Gilroy";
-  src: url(fonts/Gilroy-Bold.ttf);
+  src: url(/fonts/Gilroy-Bold.ttf);
 }
 
 * {
