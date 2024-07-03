@@ -1,14 +1,17 @@
-.hiking-essentials-container {
+.getting-started-container {
   display: flex;
   max-width: 1462px;
   margin-inline: auto;
   background-color: var(--clr-primary);
 }
 
-.hiking-essenatials-img-wrapper {
+.getting-started-img-wrapper {
   flex-basis: 33%;
-  display: grid;
-  place-items: center;
+  /* display: grid;
+  place-items: center; */
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
 .--order-left {
@@ -19,29 +22,24 @@
   order: 1;
 }
 
-.hiking-essentials-img {
+.getting-started-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  max-height: 720px;
 }
 
-.hiking-essentials-content {
+.getting-started-content {
   flex-basis: 66%;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 8rem; /* 160px */
   gap: 2rem; /* 32px */
-  padding: 2rem 2rem 0rem 12rem;
 }
 
-/* when used positions the content to the right side of the container */
-/* .--stick--right {
-  padding: 2rem 2rem 0rem 12rem;
-} */
-
-.hiking-essentials-content__index {
+.content__index {
+  left: 0px;
   top: 2rem; /* 32px */
   position: absolute;
   opacity: 0.1;
@@ -52,15 +50,9 @@
   line-height: 15rem; /* 240px */
 }
 
-/* 
-positions the content__index element in accordance to the figma design, that is, slightly right */
-.index--move-right {
-  left: 4rem;
-}
-
-.content__tagline-wrapper {
+.content__tagline {
   display: flex;
-  gap: 2rem;
+  gap: 2rem; /* 32px */
 }
 
 .tagline {
@@ -70,7 +62,6 @@ positions the content__index element in accordance to the figma design, that is,
   font-weight: var(--fnt-weight-700);
   text-transform: uppercase;
   letter-spacing: 6px;
-  word-wrap: nowrap;
 }
 
 .tagline__hr {
@@ -112,63 +103,66 @@ positions the content__index element in accordance to the figma design, that is,
   font-weight: var(--fnt-weight-700);
 }
 
-.cta__icon--arrow {
-  width: 16px;
-  height: 12px;
-}
-
 @media screen and (max-width: 1280px) {
-  .hiking-essentials-content {
-    padding: 5rem; /* 96px */
+  .getting-started-content {
+    padding: 6rem; /* 96px */
     gap: 2rem; /* 32px */
-  }
-  .hiking-essentials-content__index {
-    top: -10px;
-    left: 0px;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .hiking-essentials-content {
-    padding: 6rem;
+  .getting-started-content {
+    padding: 8rem;
     gap: 2rem;
   }
 
-  .hiking-essentials-container {
+  .getting-started-container {
     flex-direction: column;
   }
-  .hiking-essentials-content__index {
-    top: -10px;
-    left: 0px;
+  .getting-started-img-wrapper {
+    max-height: 700px;
+  }
+  .getting-started-img {
+    margin-top: -30rem;
   }
 }
 
 @media screen and (max-width: 680px) {
-  .hiking-essentials-content {
+  .getting-started-content {
     padding: 5rem; /* 80px */
     gap: 1rem; /* 16px */
   }
 
-  .hiking-essentials-container {
+  .getting-started-container {
     flex-direction: column;
+  }
+  .getting-started-img {
+    margin-top: -25rem;
+  }
+
+  .cta__icon-arrow {
+    width: 16px;
+    height: 12px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .hiking-essentials-content {
+  .getting-started-content {
     padding: 3rem; /* 48px */
     gap: 1rem; /* 16px */
   }
-  .hiking-essentials-content__index {
+  .content__index {
     font-size: var(--fnt-size-xlg); /* 128px */
     top: -50px;
-    left: 0px;
   }
-  .hiking-essentials-container {
+  .getting-started-container {
     flex-direction: column;
   }
-  .hiking-essentials-img {
-    max-height: 300px;
+  .getting-started-img {
+    margin-top: -15rem;
+  }
+  .content__tagline {
+    gap: 1rem;
   }
   .tagline {
     font-size: var(--fnt-size-xs); /* 8px */
@@ -181,7 +175,7 @@ positions the content__index element in accordance to the figma design, that is,
   }
 
   .content__description {
-    font-size: var(--fnt-size-s); /* 8px */
+    font-size: var(--fnt-size-s); /* 16px */
     line-height: 1rem; /* 16px */
   }
 
@@ -191,10 +185,5 @@ positions the content__index element in accordance to the figma design, that is,
 
   .content__cta {
     gap: 1rem; /* 16px */
-  }
-
-  .cta__icon-arrow {
-    width: 16px;
-    height: 12px;
   }
 }
