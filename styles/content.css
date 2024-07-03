@@ -5,10 +5,15 @@
   background-color: var(--clr-primary);
 }
 
+/* this .img-wrapper and .img class is different than the section-2's wrapper.
+because the img here has differet proportions in terms of centering the 
+content of it. the sky in the img here covers a lot more ground and as a result 
+of this when the img auto-resizes according the its parent(img-wrapper)  
+it crops the man and the trail a lot more than it crops the sky, resulting 
+in a weird photo. So I decided to use flex and play with negative 
+margin in media queries to centralize the img in an expected way  */
 .getting-started-img-wrapper {
   flex-basis: 33%;
-  /* display: grid;
-  place-items: center; */
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -119,9 +124,9 @@
   .getting-started-container {
     flex-direction: column;
   }
-  .getting-started-img-wrapper {
+  /* .getting-started-img-wrapper {
     max-height: 700px;
-  }
+  } */
   .getting-started-img {
     margin-top: -30rem;
   }
