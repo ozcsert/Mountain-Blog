@@ -27,6 +27,7 @@
 }
 
 .hiking-essentials-content {
+  max-width: 730px;
   flex-basis: 66%;
   position: relative;
   display: flex;
@@ -92,7 +93,6 @@ positions the content__index element in accordance to the figma design, that is,
   font-size: var(--fnt-size-s); /* 16px */
   font-family: var(--fnt-family-primary);
   font-weight: var(--fnt-weight-700);
-  line-height: 2rem; /* 32px */
   word-wrap: break-word;
 }
 
@@ -130,7 +130,7 @@ positions the content__index element in accordance to the figma design, that is,
 
 @media screen and (max-width: 1000px) {
   .hiking-essentials-content {
-    padding: 6rem;
+    padding: 1.25rem;
     gap: 2rem;
   }
 
@@ -144,21 +144,10 @@ positions the content__index element in accordance to the figma design, that is,
 }
 
 @media screen and (max-width: 680px) {
-  .hiking-essentials-content {
-    padding: 5rem; /* 80px */
-    gap: 1rem; /* 16px */
-  }
-
   .hiking-essentials-container {
     flex-direction: column;
   }
-}
 
-@media screen and (max-width: 480px) {
-  .hiking-essentials-content {
-    padding: 3rem; /* 48px */
-    gap: 1rem; /* 16px */
-  }
   .hiking-essentials-content__index {
     font-size: var(--fnt-size-xlg); /* 128px */
     top: -50px;
