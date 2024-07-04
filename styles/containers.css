@@ -1,7 +1,7 @@
 .hiking-essentials-container {
   display: flex;
   max-width: 1462px;
-  margin-inline: auto;
+  margin: 100px auto;
   background-color: var(--clr-primary);
 }
 
@@ -82,7 +82,7 @@ positions the content__index element in accordance to the figma design, that is,
 }
 
 .content__title {
-  color: var(--clr-secondary);
+  color: var(--clr-white);
   font-size: var(--fnt-size-lg); /* 64px */
   font-family: var(--fnt-family-secondary);
   font-weight: var(--fnt-weight-500);
