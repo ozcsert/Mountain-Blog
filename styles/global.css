@@ -8,15 +8,9 @@
   src: url(/fonts/Gilroy-Bold.ttf);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --fnt-size-xs: 0.5rem; /* 8px */
-  --fnt-size-s: 1rem; /* 16px */
+  --fnt-size-s: 1.25rem; /* 16px */
   --fnt-size-m: 2rem; /* 32px */
   --fnt-size-lg: 4rem; /* 64px */
   --fnt-size-xlg: 8rem; /* 128px */
@@ -28,4 +22,15 @@
   --clr-white: #ffff;
   --clr-secondary: #fbd784;
   --clr-primary: #0b1d26;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fnt-family-primary);
+  background-color: var(--clr-primary);
 }
