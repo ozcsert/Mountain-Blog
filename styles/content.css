@@ -1,0 +1,180 @@
+.getting-started-container {
+  display: flex;
+  max-width: 1462px;
+  margin: 200px auto;
+  background-color: var(--clr-primary);
+}
+
+/* this .img-wrapper and .img class is different than the section-2's wrapper.
+because the img here has differet proportions in terms of centering the 
+content of it. the sky in the img here covers a lot more ground and as a result 
+of this when the img auto-resizes according the its parent(img-wrapper)  
+it crops the man and the trail a lot more than it crops the sky, resulting 
+in a weird photo. So I decided to use flex and play with negative 
+margin in media queries to centralize the img in an expected way  */
+.getting-started-img-wrapper {
+  flex-basis: 33%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.--order-left {
+  order: 0;
+}
+
+.--order-right {
+  order: 1;
+}
+
+.getting-started-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.getting-started-content {
+  max-width: 730px;
+  flex-basis: 66%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8rem; /* 160px */
+  gap: 2rem; /* 32px */
+}
+
+.content__index {
+  left: 0px;
+  top: 2rem; /* 32px */
+  position: absolute;
+  opacity: 0.1;
+  color: var(--clr-white);
+  font-size: var(--fnt-size-xxlg); /* 256px */
+  font-family: var(--fnt-family-primary);
+  font-weight: var(--fnt-weight-700);
+  line-height: 15rem; /* 240px */
+}
+
+.content__tagline {
+  display: flex;
+  gap: 2rem; /* 32px */
+}
+
+.tagline {
+  color: var(--clr-secondary);
+  font-size: var(--fnt-size-s); /* 16px */
+  font-family: var(--fnt-family-primary);
+  font-weight: var(--fnt-weight-700);
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.tagline__hr {
+  width: 6rem;
+  margin: auto 0;
+  height: 0px;
+  border-color: var(--clr-secondary);
+}
+
+.content__title {
+  color: var(--clr-white);
+  font-size: var(--fnt-size-lg); /* 64px */
+  font-family: var(--fnt-family-secondary);
+  font-weight: var(--fnt-weight-700);
+}
+
+.content__description {
+  color: var(--clr-white);
+  font-size: var(--fnt-size-s); /* 16px */
+  font-family: var(--fnt-family-primary);
+  font-weight: var(--fnt-weight-700);
+  word-wrap: break-word;
+}
+
+.content__cta {
+  display: flex;
+  width: auto;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* 32px */
+}
+
+.cta__label {
+  color: var(--clr-secondary);
+  font-size: var(--fnt-size-s); /* 16px */
+  font-family: var(--fnt-family-primary);
+  font-weight: var(--fnt-weight-700);
+}
+
+@media screen and (max-width: 1280px) {
+  .getting-started-content {
+    padding: 6rem; /* 96px */
+    gap: 2rem; /* 32px */
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .getting-started-content {
+    padding: 1.25rem;
+    gap: 2rem;
+  }
+
+  .getting-started-container {
+    flex-direction: column;
+  }
+  .content__description {
+    font-size: var(--fnt-size-xs); /* 16px */
+  }
+  /* .getting-started-img-wrapper {
+    max-height: 700px;
+  } */
+  .getting-started-img {
+    margin-top: -30rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .cta__icon-arrow {
+    width: 16px;
+    height: 12px;
+  }
+
+  .content__index {
+    font-size: var(--fnt-size-xlg); /* 128px */
+    top: -50px;
+  }
+
+  .getting-started-container {
+    flex-direction: column;
+  }
+
+  .getting-started-img {
+    margin-top: -15rem;
+  }
+
+  .content__tagline {
+    gap: 1rem;
+  }
+
+  .tagline {
+    font-size: var(--fnt-size-xs); /* 16px */
+  }
+
+  .tagline__hr {
+    width: 3rem;
+  }
+
+  .content__title {
+    font-size: var(--fnt-size-m); /* 32px */
+  }
+
+  .cta__label {
+    font-size: var(--fnt-size-xs); /* 8px */
+  }
+
+  .content__cta {
+    gap: 1rem; /* 16px */
+  }
+}
