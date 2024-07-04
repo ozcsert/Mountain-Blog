@@ -1,7 +1,7 @@
 .where-you-go-container {
   display: flex;
   max-width: 1462px;
-  margin: 200px auto;
+  margin: 100px auto;
   background-color: var(--clr-primary);
 }
 
@@ -71,7 +71,7 @@
 }
 
 .content__title {
-  color: var(--clr-secondary);
+  color: var(--clr-white);
   font-size: var(--fnt-size-lg); /* 64px */
   font-family: var(--fnt-family-secondary);
   font-weight: var(--fnt-weight-500);
