@@ -141,6 +141,7 @@
     gap: 6rem; /* 36px */
     padding: 0px 20px;
   }
+  /*removes the flipped layout for sections 01 and 03 so that we have a consistent section layout overall */
   .mntn-section--flipped {
   }
   .content--position-right-center {
