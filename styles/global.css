@@ -9,14 +9,14 @@
 }
 
 :root {
-  --fnt-size-xs: 0.5rem; /* 8px */
-  --fnt-size-s: 1.25rem; /* 16px */
+  --fnt-size-xs: 1rem; /* 16px */
+  --fnt-size-s: 1.125rem; /* 18px */
   --fnt-size-m: 2rem; /* 32px */
   --fnt-size-lg: 4rem; /* 64px */
   --fnt-size-xlg: 8rem; /* 128px */
   --fnt-size-xxlg: 16rem; /* 256px */
-  --fnt-family-primary: "Gilroy";
-  --fnt-family-secondary: "Chronicle Display";
+  --fnt-family-primary: "Gilroy", sans-serif;
+  --fnt-family-secondary: "Chronicle Display", sans-serif;
   --fnt-weight-700: 700;
   --fnt-weight-500: 500;
   --clr-white: #ffff;
@@ -28,6 +28,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
