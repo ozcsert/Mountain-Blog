@@ -139,9 +139,9 @@
   .mntn-section {
     flex-direction: column;
     gap: 6rem; /* 36px */
+    padding: 0px 20px;
   }
   .mntn-section--flipped {
-    flex-direction: column-reverse;
   }
   .content--position-right-center {
     place-items: center !important;
