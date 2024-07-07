@@ -138,7 +138,7 @@
 @media screen and (max-width: 1080px) {
   .mntn-section {
     flex-direction: column;
-    gap: 6rem; /* 36px */
+    gap: 8rem; /* 52px */
     padding: 0px 20px;
   }
   /*removes the flipped layout for sections 01 and 03 so that we have a consistent section layout overall */
