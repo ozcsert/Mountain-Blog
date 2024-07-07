@@ -1,14 +1,19 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1281px) {
   .mntn-content__index {
     font-size: var(--fnt-size-xxlg);
+  }
+  .mntn-section {
+    padding: 0px 20px;
+  }
+  footer {
+    padding: 0px 20px;
   }
 }
 
 @media screen and (max-width: 1080px) {
   .mntn-section {
     flex-direction: column;
-    gap: 6rem; /* 36px */
-    padding: 0px 20px;
+    gap: 8rem; /* 52px */
   }
   .mntn-section--flipped {
   }
