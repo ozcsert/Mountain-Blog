@@ -11,9 +11,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  /* display: grid;
-  place-items: left;
-  grid-column: auto; */
   color: var(--clr-white);
 }
 

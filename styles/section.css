@@ -10,6 +10,7 @@
 .mntn-section {
   display: flex;
   max-width: 1462px;
+  margin: 0px auto;
   background-color: var(--clr-primary);
   justify-content: center;
   align-items: center;
@@ -33,6 +34,7 @@
   object-fit: cover;
   object-position: bottom;
 }
+
 .img--position-left {
   object-position: left;
 }
