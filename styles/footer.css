@@ -59,3 +59,16 @@ footer {
   font-style: normal;
   font-weight: 500;
 }
+
+@media screen and (max-width: 980px) {
+  footer {
+    flex-direction: column-reverse;
+    gap: 4rem;
+  }
+  .footer__links {
+    justify-content: space-around;
+  }
+  .footer__content-wrapper {
+    align-self: center;
+  }
+}

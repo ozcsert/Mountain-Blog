@@ -47,6 +47,14 @@ body {
   justify-content: center;
   align-items: center;
   gap: 15rem;
+  background-image: linear-gradient(
+      180deg,
+      rgba(11, 29, 38, 0) 20%,
+      #0b1d26 38%
+    ),
+    url(/img/VG.png), url(/img/MG.png), url(/img/HG.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px, 50% 23%, 50% 17%, top center;
 }
 
 .global-logo {
@@ -102,4 +110,24 @@ body {
 
 .cta--color-white {
   color: var(--clr-white);
+}
+
+@media screen and (max-width: 680px) {
+  .global-tagline-wrapper {
+    gap: 1rem;
+  }
+
+  .global-tagline {
+    font-size: var(--fnt-size-xs); /* 16px */
+  }
+
+  .global-tagline__hr {
+    width: 3rem; /* 48px */
+  }
+  .global-cta-wrapper {
+    gap: 1rem; /* 16px */
+  }
+  .cta__label {
+    font-size: var(--fnt-size-xs); /* 8px */
+  }
 }
