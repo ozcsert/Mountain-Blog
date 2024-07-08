@@ -1,25 +1,3 @@
-@font-face{
-    font-family: "Chronicle Display";
-    src:url(fonts/Chronicle\ Display\ Roman.otf)
-}
-
-@font-face{
-    font-family: "Gilroy";
-    src:url(fonts/Gilroy-Bold.ttf)
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-}
-
-/* change this font-size value to change all of the font sizes. They are bound with rem */
-html {
-    font-size: 10px;
-}
 
 .hero-box {
     position:fixed;
