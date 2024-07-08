@@ -98,7 +98,7 @@ body {
 
 .global-cta__label {
   color: var(--clr-secondary);
-  font-size: var(--fnt-size-s); /* 16px */
+  font-size: var(--fnt-size-s); /* 18px */
   font-family: var(--fnt-family-primary);
   font-weight: var(--fnt-weight-700);
 }
@@ -110,6 +110,25 @@ body {
 
 .cta--color-white {
   color: var(--clr-white);
+}
+
+@media screen and (max-width: 1080px) {
+  .page-container {
+    gap: 10rem;
+    background-position: 0px -700px, 40% 15%, 50% 10%, top center;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .page-container {
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .page-container {
+    background-position: 0px -700px, 40% 15%, center 10%, top center;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -129,5 +148,17 @@ body {
   }
   .cta__label {
     font-size: var(--fnt-size-xs); /* 8px */
+  }
+  .page-container {
+    background-position: 0px -800px, 35% 15%, center 10%, top center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mntn-content__title {
+    font-size: var(--fnt-size-xm);
+  }
+  .page-container {
+    background-position: 0px -1000px, 30% 12%, center 6%, top center;
   }
 }
