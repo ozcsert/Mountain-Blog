@@ -14,14 +14,6 @@ footer {
   color: var(--clr-white);
 }
 
-.footer__logo {
-  font-family: var(--fnt-family-secondary);
-  font-size: var(--fnt-size-m);
-  font-weight: var(--fnt-weight-700);
-  text-transform: uppercase;
-  letter-spacing: 5px;
-}
-
 .footer__catchprase {
   font-style: normal;
   line-height: 2rem;

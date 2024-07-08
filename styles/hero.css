@@ -1,233 +1,141 @@
-
-.hero-box {
-    position:fixed;
-    width: 1920px;
-    height: 1200px;
-    background: linear-gradient(330deg, rgba(11, 29, 38, 0.00) 31.06%, #0B1D26 100.00%),url(img/HG.png),url(img/VG.png),url(img/MG.png) lightgray 50% / cover no-repeat;;
-    background-repeat: no-repeat;
-    background-size: auto auto, auto auto, auto auto, auto; 
-    background-position: top 0px right 0px,top -74rem right 0px, top 76.4rem right, top 28rem right 0px; 
-}                       
-header {
-    width: 91.66%;
-    height: 2.5rem;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: auto;
-    margin-top: 6.4rem;
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  height: 1200px;
+  padding: 60px 80px 0px;
+  align-items: center;
+  justify-content: start;
+  gap: 13rem;
+  /* background: linear-gradient(330deg, rgba(11, 29, 38, 0) 31.06%, #0b1d26 100%),
+    url(img/HG.png), url(img/VG.png),
+    url(img/MG.png) lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: auto auto, auto auto, auto auto, auto;
+  background-position: top 0px right 0px, top -74rem right 0px,
+    top 76.4rem right, top 28rem right 0px; */
 }
 
-nav {
-    order:1;
-    width: auto;
-    height: auto;  
-    flex-shrink: 0;
-    display : flex;
-    flex-direction : row;
-    justify-content: center;
-} 
-
-nav > ul {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
+.header-section {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--clr-white);
 }
 
-nav > ul > li > a {
-    color: var(--Wei, #FFF);
-    font-family: "Gilroy";
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.nav-wrapper {
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
 }
 
-.logo > a {
-    order:0;
-    color: var(--Wei, #FFF);
-    font-family: "Chronicle Display";
-    font-size: 3.6rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.032rem;
-    text-transform:uppercase;
-    justify-content: center;
-    align-items: center;
-    margin-top: -0.7rem;
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.nav-links > li > a {
+  color: var(--clr-white);
+  font-size: var(--fnt-size-s); /* 18px */
+  font-style: normal;
+  font-weight: var(--fnt-weight-700);
 }
 
 .account {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    order:2;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .account > a {
-    color: var(--Wei, #FFF);
-    font-family: "Gilroy";
-    font-size: 1.7rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  color: var(--clr-white);
+  font-size: var(--fnt-size-s); /* 18px */
+  font-style: normal;
+  font-weight: var(--fnt-weight-700);
+  line-height: normal;
+}
+
+.middle-section {
+  display: flex;
+  justify-content: space-between;
 }
 
 .social {
-    width: 2.4px;
-    height: auto;
-    flex-shrink: 0;
-    display : flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 36rem;
-    margin-left : 8.2rem;
-    text-wrap: nowrap;
-} 
-
-.social > ul {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    transform: rotate(90deg);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: auto;
+  gap: 2rem;
 }
 
-.social > ul > li > a {
-    color: var(--Wei, #FFF);
-    font-family: "Gilroy";
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-.social > ul > li > a > svg {
-    transform: rotate(-90deg);
+.social__follow-us {
+  color: var(--clr-white);
+  font-size: var(--fnt-size-s);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  writing-mode: vertical-lr;
 }
 
-.slider {
-    width: 2.4rem;
-    height: auto;
-    flex-shrink: 0;
-    display : flex;
-    flex-direction: row;
-    justify-content: start;
-    text-wrap: nowrap;
-    margin-left: 176.3rem;
-    margin-top: -13.8rem;
-    gap: 4rem;
-} 
-
-.slider > ul {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    justify-content: center;
+.social li {
+  width: auto;
 }
 
-.slider > ul > li {
-    color: var(--Wei, #FFF);
-    font-family: "Gilroy";
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    align-self: flex-end;
+.slider-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 1rem;
+  justify-content: center;
+  align-content: center;
+  height: auto;
 }
 
-.slider > .line {
-    filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.20));
+.slider__numbers {
+  display: grid;
+  grid-auto-rows: min-content;
+  gap: 3rem;
+  justify-content: center;
+  color: var(--clr-white);
+  font-size: var(--fnt-size-s);
+  font-weight: var(--fnt-weight-700);
+  line-height: normal;
 }
 
-.hero-content-box {
-    display: flex;
-    flex-direction: row;
-    width: 49.47%;
-    height: 25.83%;
-    align-items: center;
-    margin-top: -28.9rem;
-    margin-left: 50rem;
-    gap:3.2rem;
+.slider-wrapper > ul > li {
+  justify-self: end;
 }
 
-.hero-content {
-    position: relative;
-    display: inline-flex;
-    flex-direction: column;
-    gap: 2.9rem;
-    width: auto;
-    padding-top: 11%;     
-    padding-bottom: 10%;
+.slider__line {
+  filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.2));
 }
 
-.hero-content > .tagline {
-    position: relative;
-    display:flex;
-    flex-direction:row;
-    justify-content: flex-start;
-    align-items: center;
-    gap:3.2rem;
-}
-.hero-content > .tagline > .text {
-    order:1;
-    left: 9.6rem;  
-    color: #FBD784; 
-    font-size: 1.8rem; 
-    font-family: Gilroy; 
-    font-weight: 700; 
-    text-transform: uppercase; 
-    letter-spacing: 0.6rem; 
-    word-wrap: break-word"
+.text-block-wrapper {
+  max-width: 52%;
 }
 
-.hero-content > .tagline > .line {
-    order:0;
-    width: 8%; 
-    height: 0.2rem; 
-    left: 0px; 
-    background: #FBD784;
+.text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: auto;
 }
 
-.hero-content > .title {
-    width: auto; 
-    color: white; 
-    font-size: 8.8rem; 
-    font-family: Chronicle Display; 
-    font-weight:500; 
-    text-transform: capitalize;
-    height: auto;
-    line-height: 10rem;;
+.text-block__title {
+  color: var(--clr-white);
+  font-size: var(--fnt-size-xlg);
+  font-family: var(--fnt-family-secondary);
+  font-weight: var(--fnt-weight-500);
+  text-transform: capitalize;
+  height: auto;
+  line-height: 100px;
 }
 
-.scroll-down {
-    display: flex;
-    flex-direction: row;
-    width: 22%;
-    height: 100%;
-    justify-content: flex-start;
-    align-items: center;
-    gap:1.6rem;
-}
-
-.scroll-down > .text {
-    color: var(--Accent, #ffffff);
-    font-size: 1.8rem; 
-    font-family: Gilroy; 
-    font-weight: 700; 
-}
-
-.scroll-down > .icon-arrow {
-    color: var(--Wei, #FFF);
-    width: 14%; 
-    height: 50%; 
-}
-
+/* 
 @media screen and (max-width: 1611px) {
     .hero-box {
         width: 1610px;
@@ -336,4 +244,4 @@ nav > ul > li > a {
         font-size: 2.0px;
         }
 }
-
+ */

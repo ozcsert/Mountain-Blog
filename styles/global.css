@@ -15,7 +15,7 @@
   --fnt-size-m: 2rem; /* 32px */
   --fnt-size-xm: 3rem; /* 48px */
   --fnt-size-lg: 4rem; /* 64px */
-  --fnt-size-xlg: 8rem; /* 128px */
+  --fnt-size-xlg: 5.5rem; /* 88px */
   --fnt-size-xxlg: 14rem; /* 256px */
   --fnt-family-primary: "Gilroy", sans-serif;
   --fnt-family-secondary: "Chronicle Display", sans-serif;
@@ -37,4 +37,69 @@
 body {
   font-family: var(--fnt-family-primary);
   background-color: var(--clr-primary);
+}
+
+.page-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+}
+
+.global-logo {
+  font-family: var(--fnt-family-secondary);
+  font-size: var(--fnt-size-m);
+  font-weight: var(--fnt-weight-700);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.global-tagline-wrapper {
+  display: flex;
+  gap: 2rem; /* 32px */
+}
+
+.global-tagline {
+  color: var(--clr-secondary);
+  font-size: var(--fnt-size-s); /* 18px */
+  font-family: var(--fnt-family-primary);
+  font-weight: var(--fnt-weight-700);
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  word-wrap: nowrap;
+}
+
+.global-tagline__hr {
+  width: 6rem; /* 76px */
+  margin: auto 0;
+  height: 0px;
+  border-color: var(--clr-secondary);
+}
+
+.global-cta-wrapper {
+  display: flex;
+  width: auto;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* 32px */
+}
+
+.global-cta__label {
+  color: var(--clr-secondary);
+  font-size: var(--fnt-size-s); /* 16px */
+  font-family: var(--fnt-family-primary);
+  font-weight: var(--fnt-weight-700);
+}
+
+.global-cta__icon-arrow {
+  width: 16px;
+  height: 12px;
+}
+
+.cta--color-white {
+  color: var(--clr-white);
 }
