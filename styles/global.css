@@ -11,10 +11,12 @@
 :root {
   --fnt-size-xs: 1rem; /* 16px */
   --fnt-size-s: 1.125rem; /* 18px */
+  --fnt-size-s-m: 1.5rem; /* 24px */
   --fnt-size-m: 2rem; /* 32px */
+  --fnt-size-xm: 3rem; /* 48px */
   --fnt-size-lg: 4rem; /* 64px */
   --fnt-size-xlg: 8rem; /* 128px */
-  --fnt-size-xxlg: 14rem; /* 224px */
+  --fnt-size-xxlg: 14rem; /* 256px */
   --fnt-family-primary: "Gilroy", sans-serif;
   --fnt-family-secondary: "Chronicle Display", sans-serif;
   --fnt-weight-700: 700;
@@ -29,6 +31,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
 }
 
 body {

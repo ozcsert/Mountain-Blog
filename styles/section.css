@@ -1,7 +1,10 @@
 .mntn-section-container {
   display: flex;
   flex-direction: column;
-  gap: 13rem; /* 196px */
+  align-items: center;
+  width: auto;
+  height: auto;
+  gap: 13rem; /* 208px */
 }
 
 .mntn-section {
@@ -12,6 +15,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .mntn-section--flipped {
   flex-direction: row-reverse;
 }
@@ -35,7 +39,7 @@
   object-position: left;
 }
 
-.img--position-top {
+.img--position-center {
   object-position: center;
 }
 
@@ -101,7 +105,7 @@
 
 .mntn-content__description {
   color: var(--clr-white);
-  font-size: var(--fnt-size-s); /* 16px */
+  font-size: var(--fnt-size-s); /* 18px */
   font-family: var(--fnt-family-primary);
   font-weight: var(--fnt-weight-700);
   word-wrap: break-word;
@@ -129,9 +133,12 @@
   height: 12px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1281px) {
   .mntn-content__index {
     font-size: var(--fnt-size-xxlg);
+  }
+  .mntn-section {
+    padding: 0px 20px;
   }
 }
 
@@ -139,9 +146,7 @@
   .mntn-section {
     flex-direction: column;
     gap: 8rem; /* 52px */
-    padding: 0px 20px;
   }
-  /*removes the flipped layout for sections 01 and 03 so that we have a consistent section layout overall */
   .mntn-section--flipped {
   }
   .content--position-right-center {

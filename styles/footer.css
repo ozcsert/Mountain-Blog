@@ -67,3 +67,16 @@ footer {
   font-style: normal;
   font-weight: 500;
 }
+
+@media screen and (max-width: 1281px) {
+  footer {
+    padding: 0px 20px 20px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  footer {
+    flex-direction: column-reverse;
+    gap: 4rem;
+  }
+}
