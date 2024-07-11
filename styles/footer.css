@@ -14,14 +14,6 @@ footer {
   color: var(--clr-white);
 }
 
-.footer__logo {
-  font-family: var(--fnt-family-secondary);
-  font-size: var(--fnt-size-m);
-  font-weight: var(--fnt-weight-700);
-  text-transform: uppercase;
-  letter-spacing: 5px;
-}
-
 .footer__catchprase {
   font-style: normal;
   line-height: 2rem;
@@ -68,15 +60,15 @@ footer {
   font-weight: 500;
 }
 
-@media screen and (max-width: 1281px) {
-  footer {
-    padding: 0px 20px 20px;
-  }
-}
-
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 980px) {
   footer {
     flex-direction: column-reverse;
     gap: 4rem;
+  }
+  .footer__links {
+    justify-content: space-around;
+  }
+  .footer__content-wrapper {
+    align-self: center;
   }
 }
