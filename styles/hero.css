@@ -13,8 +13,6 @@
     #0b1d26 108.93%
   );
   background-size: cover;
-  /* background-position: top 0px right 0px, top -74rem right 0px,
-    top 76.4rem right, top 28rem right 0px; */
 }
 
 .header-section {
@@ -167,6 +165,12 @@
   }
   .hero-container {
     gap: 8rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .middle-section {
+    gap: 3rem;
   }
 }
 
